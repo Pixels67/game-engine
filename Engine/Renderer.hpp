@@ -4,13 +4,11 @@
 #include "SFML/Graphics.hpp"
 
 namespace Engine {
+    class Renderer {
+    public:
+        Renderer();
+        ~Renderer();
 
-class Renderer {
-public:
-    Renderer();
-    ~Renderer();
-
-    void Render(sf::RenderWindow &window, ObjectPool &objectPool);
-};
-
+        void Render(sf::RenderWindow &window, ObjectPool &objectPool);
+    };
 } // Engine

@@ -1,11 +1,13 @@
 #include "Engine.hpp"
 
 namespace Engine {
-    Engine::Engine()  = default;
+    Engine::Engine() = default;
     Engine::~Engine() = default;
 
-    void Engine::CreateWindow(const size_t width, const size_t height, const std::string& title) {
-        m_window = sf::RenderWindow(sf::VideoMode({static_cast<unsigned>(width), static_cast<unsigned>(height)}), title);
+    void Engine::CreateWindow(const size_t width, const size_t height, const std::string &title) {
+        m_window = sf::RenderWindow(
+            sf::VideoMode({static_cast<unsigned>(width), static_cast<unsigned>(height)}), title
+        );
     }
 
     void Engine::CloseWindow() {

@@ -39,8 +39,9 @@ Engine::ObjectPool::ObjectPool() = default;
 Engine::ObjectPool::~ObjectPool() = default;
 
 std::optional<Engine::GameObject> Engine::ObjectPool::Get(const size_t objectUid) {
-    for (auto& object : m_objects) {
-        if (object.GetUid() != objectUid) continue;
+    for (auto &object : m_objects) {
+        if (object.GetUid() != objectUid)
+            continue;
         return object;
     }
 
@@ -61,7 +62,8 @@ size_t Engine::ObjectPool::Emplace(Transform transform) {
 
 void Engine::ObjectPool::Remove(const size_t objectUid) {
     for (size_t i = 0; i < m_objects.size(); i++) {
-        if (m_objects[i].GetUid() != objectUid) continue;
+        if (m_objects[i].GetUid() != objectUid)
+            continue;
         m_objects.erase(m_objects.begin() + i);
     }
 }
