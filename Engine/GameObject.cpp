@@ -1,15 +1,13 @@
-#include <optional>
 #include "GameObject.hpp"
+#include <optional>
 
 Engine::Transform::Transform(const sf::Vector2f position, const sf::Vector2f scale)
-: position(position)
-, scale(scale)
-{}
+    : position(position)
+    , scale(scale) {}
 
 Engine::GameObject::GameObject(const Transform transform)
-: m_isActive(false)
-, m_transform(transform)
-{}
+    : m_isActive(false)
+    , m_transform(transform) {}
 
 Engine::GameObject::~GameObject() = default;
 

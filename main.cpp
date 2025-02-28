@@ -1,5 +1,5 @@
-#include <SFML/Graphics.hpp>
 #include "Engine/Engine.hpp"
+#include <SFML/Graphics.hpp>
 
 constexpr size_t SCREEN_WIDTH = 800;
 constexpr size_t SCREEN_HEIGHT = 600;
