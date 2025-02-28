@@ -1,6 +1,11 @@
 #include <optional>
 #include "GameObject.hpp"
 
+Engine::Transform::Transform(const sf::Vector2f position, const sf::Vector2f scale)
+: position(position)
+, scale(scale)
+{}
+
 Engine::GameObject::GameObject(const Transform transform)
 : m_isActive(false)
 , m_transform(transform)

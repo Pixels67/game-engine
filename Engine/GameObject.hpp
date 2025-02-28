@@ -6,6 +6,8 @@
 namespace Engine {
 
 struct Transform {
+    Transform(sf::Vector2f position, sf::Vector2f scale);
+
     sf::Vector2f position = sf::Vector2f(0.0f, 0.0f);
     sf::Vector2f scale = sf::Vector2f(1.0f, 1.0f);
 };

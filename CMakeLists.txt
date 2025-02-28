@@ -19,8 +19,8 @@ FetchContent_MakeAvailable(SFML)
 set(
         PROJECT_SOURCES
         main.cpp
-        engine/Engine.cpp
-        engine/Engine.hpp
+        Engine/Engine.cpp
+        Engine/Engine.hpp
         Engine/Renderer.cpp
         Engine/Renderer.hpp
         Engine/GameObject.cpp
